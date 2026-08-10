@@ -2,11 +2,11 @@
   "schema_version": 2,
   "script_version": "2026.07.18.2-parallel",
   "site_title": "Trackers status",
-  "updated_at": "2026-08-10T07:20:07.537734+00:00",
+  "updated_at": "2026-08-10T07:25:20.934409+00:00",
   "display_timezone": "Europe/Paris",
   "history_started_at": "2026-05-05T10:00:00+00:00",
   "retention_days": 30,
-  "overall_status": "degraded",
+  "overall_status": "up",
   "targets": [
     {
       "key": "c411",
@@ -29,11 +29,11 @@
     {
       "key": "tr4ker",
       "label": "Tr4ker",
-      "status": "down",
+      "status": "up",
       "history_started_at": "2026-08-06T13:31:02.404713+00:00",
-      "down_since": "2026-08-10T07:13:47.306543+00:00",
-      "current_downtime_seconds": 380,
-      "last_error": "La vérification a échoué pendant le chargement ou le contrôle du site."
+      "down_since": null,
+      "current_downtime_seconds": null,
+      "last_error": null
     }
   ],
   "incidents": [
@@ -4177,8 +4177,8 @@
       "target_key": "tr4ker",
       "label": "Tr4ker",
       "started_at": "2026-08-10T07:13:47.306543+00:00",
-      "ended_at": null,
-      "duration_seconds": 380,
+      "ended_at": "2026-08-10T07:25:20.917389+00:00",
+      "duration_seconds": 693,
       "last_error": "La vérification a échoué pendant le chargement ou le contrôle du site."
     }
   ],
@@ -4188,40 +4188,15 @@
       "provider": "uptime-kuma",
       "label": "Statut officiel Gemini",
       "status_url": "https://status.gemini-tracker.org/status/gemini",
-      "updated_at": "2026-08-10T07:20:07.537734+00:00",
+      "updated_at": "2026-08-10T07:25:20.934409+00:00",
       "services": [
         {
           "key": "gemini-gemini-tracker-site",
           "label": "Gemini-Tracker Site",
           "status": "up",
-          "ping_ms": 343,
+          "ping_ms": 294,
           "uptime_24h_percent": 100.0,
           "ping_history": [
-            {
-              "timestamp": "2026-08-10T05:40:42.633000+00:00",
-              "status": "up",
-              "ping_ms": 372
-            },
-            {
-              "timestamp": "2026-08-10T05:41:42.634000+00:00",
-              "status": "up",
-              "ping_ms": 278
-            },
-            {
-              "timestamp": "2026-08-10T05:42:42.634000+00:00",
-              "status": "up",
-              "ping_ms": 271
-            },
-            {
-              "timestamp": "2026-08-10T05:43:42.634000+00:00",
-              "status": "up",
-              "ping_ms": 293
-            },
-            {
-              "timestamp": "2026-08-10T05:44:42.635000+00:00",
-              "status": "up",
-              "ping_ms": 293
-            },
             {
               "timestamp": "2026-08-10T05:45:42.636000+00:00",
               "status": "up",
@@ -4696,6 +4671,31 @@
               "timestamp": "2026-08-10T07:19:42.694000+00:00",
               "status": "up",
               "ping_ms": 343
+            },
+            {
+              "timestamp": "2026-08-10T07:20:42.696000+00:00",
+              "status": "up",
+              "ping_ms": 276
+            },
+            {
+              "timestamp": "2026-08-10T07:21:42.696000+00:00",
+              "status": "up",
+              "ping_ms": 298
+            },
+            {
+              "timestamp": "2026-08-10T07:22:42.696000+00:00",
+              "status": "up",
+              "ping_ms": 328
+            },
+            {
+              "timestamp": "2026-08-10T07:23:42.696000+00:00",
+              "status": "up",
+              "ping_ms": 322
+            },
+            {
+              "timestamp": "2026-08-10T07:24:42.697000+00:00",
+              "status": "up",
+              "ping_ms": 294
             }
           ]
         },
@@ -4703,34 +4703,9 @@
           "key": "gemini-gemini-tracker-tracker",
           "label": "Gemini-Tracker Tracker",
           "status": "up",
-          "ping_ms": 6,
+          "ping_ms": 3,
           "uptime_24h_percent": 100.0,
           "ping_history": [
-            {
-              "timestamp": "2026-08-10T05:40:42.749000+00:00",
-              "status": "up",
-              "ping_ms": 4
-            },
-            {
-              "timestamp": "2026-08-10T05:41:42.749000+00:00",
-              "status": "up",
-              "ping_ms": 2
-            },
-            {
-              "timestamp": "2026-08-10T05:42:42.749000+00:00",
-              "status": "up",
-              "ping_ms": 2
-            },
-            {
-              "timestamp": "2026-08-10T05:43:42.749000+00:00",
-              "status": "up",
-              "ping_ms": 4
-            },
-            {
-              "timestamp": "2026-08-10T05:44:42.750000+00:00",
-              "status": "up",
-              "ping_ms": 2
-            },
             {
               "timestamp": "2026-08-10T05:45:42.751000+00:00",
               "status": "up",
@@ -5205,6 +5180,31 @@
               "timestamp": "2026-08-10T07:19:42.819000+00:00",
               "status": "up",
               "ping_ms": 6
+            },
+            {
+              "timestamp": "2026-08-10T07:20:42.819000+00:00",
+              "status": "up",
+              "ping_ms": 2
+            },
+            {
+              "timestamp": "2026-08-10T07:21:42.819000+00:00",
+              "status": "up",
+              "ping_ms": 4
+            },
+            {
+              "timestamp": "2026-08-10T07:22:42.818000+00:00",
+              "status": "up",
+              "ping_ms": 4
+            },
+            {
+              "timestamp": "2026-08-10T07:23:42.819000+00:00",
+              "status": "up",
+              "ping_ms": 1
+            },
+            {
+              "timestamp": "2026-08-10T07:24:42.818000+00:00",
+              "status": "up",
+              "ping_ms": 3
             }
           ]
         },
@@ -5212,34 +5212,9 @@
           "key": "gemini-gemini-tracker-api",
           "label": "Gemini-Tracker API",
           "status": "up",
-          "ping_ms": 62,
+          "ping_ms": 92,
           "uptime_24h_percent": 100.0,
           "ping_history": [
-            {
-              "timestamp": "2026-08-10T05:40:43.307000+00:00",
-              "status": "up",
-              "ping_ms": 83
-            },
-            {
-              "timestamp": "2026-08-10T05:41:43.308000+00:00",
-              "status": "up",
-              "ping_ms": 55
-            },
-            {
-              "timestamp": "2026-08-10T05:42:43.309000+00:00",
-              "status": "up",
-              "ping_ms": 47
-            },
-            {
-              "timestamp": "2026-08-10T05:43:43.309000+00:00",
-              "status": "up",
-              "ping_ms": 95
-            },
-            {
-              "timestamp": "2026-08-10T05:44:43.310000+00:00",
-              "status": "up",
-              "ping_ms": 60
-            },
             {
               "timestamp": "2026-08-10T05:45:43.310000+00:00",
               "status": "up",
@@ -5714,6 +5689,31 @@
               "timestamp": "2026-08-10T07:19:43.345000+00:00",
               "status": "up",
               "ping_ms": 62
+            },
+            {
+              "timestamp": "2026-08-10T07:20:43.345000+00:00",
+              "status": "up",
+              "ping_ms": 76
+            },
+            {
+              "timestamp": "2026-08-10T07:21:43.346000+00:00",
+              "status": "up",
+              "ping_ms": 84
+            },
+            {
+              "timestamp": "2026-08-10T07:22:43.347000+00:00",
+              "status": "up",
+              "ping_ms": 45
+            },
+            {
+              "timestamp": "2026-08-10T07:23:43.347000+00:00",
+              "status": "up",
+              "ping_ms": 76
+            },
+            {
+              "timestamp": "2026-08-10T07:24:43.347000+00:00",
+              "status": "up",
+              "ping_ms": 92
             }
           ]
         }

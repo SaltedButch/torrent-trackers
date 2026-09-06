@@ -2,11 +2,11 @@
   "schema_version": 2,
   "script_version": "2026.07.18.2-parallel",
   "site_title": "Trackers status",
-  "updated_at": "2026-09-06T04:17:58.616214+00:00",
+  "updated_at": "2026-09-06T04:23:49.047170+00:00",
   "display_timezone": "Europe/Paris",
   "history_started_at": "2026-05-05T10:00:00+00:00",
   "retention_days": 30,
-  "overall_status": "up",
+  "overall_status": "degraded",
   "targets": [
     {
       "key": "c411",
@@ -29,11 +29,11 @@
     {
       "key": "tr4ker",
       "label": "Tr4ker",
-      "status": "up",
+      "status": "down",
       "history_started_at": "2026-08-06T13:31:02.404713+00:00",
-      "down_since": null,
-      "current_downtime_seconds": null,
-      "last_error": null
+      "down_since": "2026-09-06T04:23:11.316243+00:00",
+      "current_downtime_seconds": 37,
+      "last_error": "La vérification a échoué pendant le chargement ou le contrôle du site."
     }
   ],
   "incidents": [
@@ -22356,6 +22356,14 @@
       "ended_at": "2026-09-06T04:17:58.534503+00:00",
       "duration_seconds": 366,
       "last_error": "La vérification a échoué pendant le chargement ou le contrôle du site."
+    },
+    {
+      "target_key": "tr4ker",
+      "label": "Tr4ker",
+      "started_at": "2026-09-06T04:23:11.316243+00:00",
+      "ended_at": null,
+      "duration_seconds": 37,
+      "last_error": "La vérification a échoué pendant le chargement ou le contrôle du site."
     }
   ],
   "external_status": [
@@ -22364,45 +22372,15 @@
       "provider": "uptime-kuma",
       "label": "Statut officiel Gemini",
       "status_url": "https://status.gemini-tracker.org/status/gemini",
-      "updated_at": "2026-09-06T04:17:58.616214+00:00",
+      "updated_at": "2026-09-06T04:23:49.047170+00:00",
       "services": [
         {
           "key": "gemini-gemini-tracker-site",
           "label": "Gemini-Tracker Site",
           "status": "up",
-          "ping_ms": 209,
+          "ping_ms": 232,
           "uptime_24h_percent": 98.54,
           "ping_history": [
-            {
-              "timestamp": "2026-09-06T02:38:18.371000+00:00",
-              "status": "up",
-              "ping_ms": 193
-            },
-            {
-              "timestamp": "2026-09-06T02:39:18.372000+00:00",
-              "status": "up",
-              "ping_ms": 220
-            },
-            {
-              "timestamp": "2026-09-06T02:40:18.372000+00:00",
-              "status": "up",
-              "ping_ms": 212
-            },
-            {
-              "timestamp": "2026-09-06T02:41:18.373000+00:00",
-              "status": "up",
-              "ping_ms": 265
-            },
-            {
-              "timestamp": "2026-09-06T02:42:18.374000+00:00",
-              "status": "up",
-              "ping_ms": 202
-            },
-            {
-              "timestamp": "2026-09-06T02:43:18.374000+00:00",
-              "status": "up",
-              "ping_ms": 215
-            },
             {
               "timestamp": "2026-09-06T02:44:18.375000+00:00",
               "status": "up",
@@ -22872,6 +22850,36 @@
               "timestamp": "2026-09-06T04:17:18.422000+00:00",
               "status": "up",
               "ping_ms": 209
+            },
+            {
+              "timestamp": "2026-09-06T04:18:18.422000+00:00",
+              "status": "up",
+              "ping_ms": 196
+            },
+            {
+              "timestamp": "2026-09-06T04:19:18.422000+00:00",
+              "status": "up",
+              "ping_ms": 208
+            },
+            {
+              "timestamp": "2026-09-06T04:20:18.422000+00:00",
+              "status": "up",
+              "ping_ms": 198
+            },
+            {
+              "timestamp": "2026-09-06T04:21:18.423000+00:00",
+              "status": "up",
+              "ping_ms": 215
+            },
+            {
+              "timestamp": "2026-09-06T04:22:18.424000+00:00",
+              "status": "up",
+              "ping_ms": 196
+            },
+            {
+              "timestamp": "2026-09-06T04:23:18.425000+00:00",
+              "status": "up",
+              "ping_ms": 232
             }
           ]
         },
@@ -22879,39 +22887,9 @@
           "key": "gemini-gemini-tracker-tracker",
           "label": "Gemini-Tracker Tracker",
           "status": "up",
-          "ping_ms": 3,
+          "ping_ms": 5,
           "uptime_24h_percent": 100.0,
           "ping_history": [
-            {
-              "timestamp": "2026-09-06T02:38:18.507000+00:00",
-              "status": "up",
-              "ping_ms": 5
-            },
-            {
-              "timestamp": "2026-09-06T02:39:18.508000+00:00",
-              "status": "up",
-              "ping_ms": 4
-            },
-            {
-              "timestamp": "2026-09-06T02:40:18.508000+00:00",
-              "status": "up",
-              "ping_ms": 5
-            },
-            {
-              "timestamp": "2026-09-06T02:41:18.508000+00:00",
-              "status": "up",
-              "ping_ms": 3
-            },
-            {
-              "timestamp": "2026-09-06T02:42:18.508000+00:00",
-              "status": "up",
-              "ping_ms": 2
-            },
-            {
-              "timestamp": "2026-09-06T02:43:18.508000+00:00",
-              "status": "up",
-              "ping_ms": 5
-            },
             {
               "timestamp": "2026-09-06T02:44:18.509000+00:00",
               "status": "up",
@@ -23381,6 +23359,36 @@
               "timestamp": "2026-09-06T04:17:18.549000+00:00",
               "status": "up",
               "ping_ms": 3
+            },
+            {
+              "timestamp": "2026-09-06T04:18:18.548000+00:00",
+              "status": "up",
+              "ping_ms": 3
+            },
+            {
+              "timestamp": "2026-09-06T04:19:18.548000+00:00",
+              "status": "up",
+              "ping_ms": 5
+            },
+            {
+              "timestamp": "2026-09-06T04:20:18.548000+00:00",
+              "status": "up",
+              "ping_ms": 5
+            },
+            {
+              "timestamp": "2026-09-06T04:21:18.549000+00:00",
+              "status": "up",
+              "ping_ms": 3
+            },
+            {
+              "timestamp": "2026-09-06T04:22:18.549000+00:00",
+              "status": "up",
+              "ping_ms": 4
+            },
+            {
+              "timestamp": "2026-09-06T04:23:18.563000+00:00",
+              "status": "up",
+              "ping_ms": 5
             }
           ]
         },
@@ -23388,39 +23396,9 @@
           "key": "gemini-gemini-tracker-api",
           "label": "Gemini-Tracker API",
           "status": "up",
-          "ping_ms": 63,
+          "ping_ms": 53,
           "uptime_24h_percent": 100.0,
           "ping_history": [
-            {
-              "timestamp": "2026-09-06T02:38:18.507000+00:00",
-              "status": "up",
-              "ping_ms": 62
-            },
-            {
-              "timestamp": "2026-09-06T02:39:18.507000+00:00",
-              "status": "up",
-              "ping_ms": 77
-            },
-            {
-              "timestamp": "2026-09-06T02:40:18.507000+00:00",
-              "status": "up",
-              "ping_ms": 81
-            },
-            {
-              "timestamp": "2026-09-06T02:41:18.508000+00:00",
-              "status": "up",
-              "ping_ms": 80
-            },
-            {
-              "timestamp": "2026-09-06T02:42:18.508000+00:00",
-              "status": "up",
-              "ping_ms": 45
-            },
-            {
-              "timestamp": "2026-09-06T02:43:18.508000+00:00",
-              "status": "up",
-              "ping_ms": 81
-            },
             {
               "timestamp": "2026-09-06T02:44:18.508000+00:00",
               "status": "up",
@@ -23890,6 +23868,36 @@
               "timestamp": "2026-09-06T04:17:18.548000+00:00",
               "status": "up",
               "ping_ms": 63
+            },
+            {
+              "timestamp": "2026-09-06T04:18:18.548000+00:00",
+              "status": "up",
+              "ping_ms": 72
+            },
+            {
+              "timestamp": "2026-09-06T04:19:18.549000+00:00",
+              "status": "up",
+              "ping_ms": 80
+            },
+            {
+              "timestamp": "2026-09-06T04:20:18.549000+00:00",
+              "status": "up",
+              "ping_ms": 79
+            },
+            {
+              "timestamp": "2026-09-06T04:21:18.550000+00:00",
+              "status": "up",
+              "ping_ms": 49
+            },
+            {
+              "timestamp": "2026-09-06T04:22:18.551000+00:00",
+              "status": "up",
+              "ping_ms": 40
+            },
+            {
+              "timestamp": "2026-09-06T04:23:18.563000+00:00",
+              "status": "up",
+              "ping_ms": 53
             }
           ]
         }
